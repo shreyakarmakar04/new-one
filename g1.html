@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sell Canceled IRCTC Tickets</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>IRCTC Ticket Management</h1>
+        
+        <div class="ticket-section">
+            <h2>Your Booked Tickets</h2>
+            <table id="ticket-table">
+                <thead>
+                    <tr>
+                        <th>Ticket ID</th>
+                        <th>Train Name</th>
+                        <th>Journey Date</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Ticket Data Will Be Injected Here -->
+                </tbody>
+            </table>
+        </div>
+        
+        <div id="sell-ticket-section" class="hidden">
+            <h2>Sell Your Canceled Ticket</h2>
+            <form id="sell-ticket-form">
+                <label for="ticket-id">Ticket ID:</label>
+                <input type="text" id="ticket-id" disabled>
+                <br>
+                <label for="price">Selling Price:</label>
+                <input type="number" id="price" required>
+                <br>
+                <button type="submit">List Ticket for Sale</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
